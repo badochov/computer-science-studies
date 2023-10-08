@@ -1,0 +1,11 @@
+BasedOnStyle: llvm
+AllowShortFunctionsOnASingleLine: None
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+ColumnLimit: 100
+IndentCaseLabels: true
+NamespaceIndentation: All
+AllowShortBlocksOnASingleLine: Never
+SpaceBeforeCpp11BracedList: false
+Standard: c++17
+AlwaysBreakTemplateDeclarations: Yes

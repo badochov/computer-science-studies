@@ -1,0 +1,78 @@
+html
+    head
+        include csrf.pug
+        title #{"Quizy lepsze niż z MD"}
+    style
+        include css/main.css
+        include node_modules/bootstrap/dist/css/bootstrap.css
+    body
+        include user.pug
+
+        <main class="container main-page">
+
+            if user
+                <section id="quiz-choise">
+                <div class="row">
+                    <div class="col-12">
+                    <h1 class="main-header">Wybór quizu</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="quizes">
+                    <div class="row table-header">
+                        <div class="col-8 d-flex justify-content-center">Opis</div>
+                        <div class="col-4 d-flex justify-content-center">Akcja</div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+                <section id="quiz-prev-results">
+                <div class="row">
+                    <div class="col-12">
+                    <h1>Poprzednie wyniki</h1>
+                    </div>
+                </div>
+                <div class="row table-header">
+                    <div class="col-6 d-flex justify-content-center">Opis quizu</div>
+                    <div class="col-4 d-flex justify-content-center">Wynik</div>
+                    <div class="col-2 d-flex justify-content-center">Akcja</div>
+                </div>
+
+                </section>
+                <section id="quiz-desc">
+                <h1 class="main-header">Opis quizu</h1>
+                <div id="desc-wrapper">
+                    <p id="desc"></p>
+                </div>
+                </section>
+                <section id="excercise">
+                <div id="quick-access"></div>
+                <h2>Pytanie <span id="excercise-number"></span></h2>
+                <span id="prompt"></span><br />
+                <form action="index.html" id="answer-form">
+                    <label for="answer">Odpowiedź</label><br />
+                    <input type="number" id="answer" class="form-control" />
+                </form>
+                <p id="penalty">
+                    Kara za zła odpowiedź: <span id="penalty-time">0</span> sekund
+                </p>
+                <div class="controls row">
+                    <div class="col-4 d-flex justify-content-center">
+                    <button id="previous" class="btn btn-secondary">Poprzednie pytanie</button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                    <button id="stop" disabled class="btn btn-success">Stop</button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                    <button id="next" class="btn btn-secondary">Następne pytanie</button>
+                    </div>
+                </div>
+                </section>
+            else
+                section
+                    h1 #{"Super strona z quizami"}
+                    hr
+                    h2(style="text-align: center;") #{"Zaloguj się aby odkryć niesamowite quizy matematyczne!"}
+        </main>
+
+        <script src="/dist/main.js"></script>

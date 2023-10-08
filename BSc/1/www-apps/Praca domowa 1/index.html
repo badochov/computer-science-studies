@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+  <main class="container">
+    <section id="quiz-choise">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="main-header">Wybór quizu</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" id="quizes">
+          <div class="row table-header">
+            <div class="col-8 d-flex justify-content-center">Opis</div>
+            <div class="col-4 d-flex justify-content-center">Akcja</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz-prev-results">
+      <div class="row">
+        <div class="col-12">
+          <h1>Poprzednie wyniki</h1>
+        </div>
+      </div>
+      <div class="row table-header">
+        <div class="col-8 d-flex justify-content-center">Opis quizu</div>
+        <div class="col-4 d-flex justify-content-center">Wynik</div>
+      </div>
+
+    </section>
+    <section id="quiz-desc">
+      <h1 class="main-header">Opis quizu</h1>
+      <div id="desc-wrapper">
+        <p id="desc"></p>
+      </div>
+    </section>
+    <section id="excercise">
+      <div id="quick-access"></div>
+      <h2>Pytanie <span id="excercise-number"></span></h2>
+      <span id="prompt"></span><br />
+      <form action="index.html" id="answer-form">
+        <label for="answer">Odpowiedź</label><br />
+        <input type="number" id="answer" class="form-control" />
+      </form>
+      <p id="penalty">
+        Kara za zła odpowiedź: <span id="penalty-time">0</span> sekund
+      </p>
+      <div class="controls row">
+        <div class="col-4 d-flex justify-content-center">
+          <button id="previous" class="btn btn-secondary">Poprzednie pytanie</button>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <button id="stop" disabled class="btn btn-success">Stop</button>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <button id="next" class="btn btn-secondary">Następne pytanie</button>
+        </div>
+      </div>
+    </section>
+    <section id="result">
+      <h2>Wyniki</h2>
+      <div id="results">
+        Czas: <span id="init-result"></span>s
+        <div id="correctness">
+
+        </div>
+        Wynik końcowy: <span id="final-result"></span>s
+      </div>
+      <div class="controls row">
+        <div class="col-6 d-flex justify-content-center">
+          <button id="save" class="btn btn-success">Zapisz wynik</button>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <button id="save-with-stats" class="btn btn-warning">Zapisz wynik ze statystykami</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="dist/main.js"></script>
+</body>
+
+</html>

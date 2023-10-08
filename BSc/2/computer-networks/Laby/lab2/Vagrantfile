@@ -1,0 +1,16 @@
+# coding: utf-8
+# Ten plik należy zapisać jako Vagrantfile, albo używać tak: VAGRANT_VAGRANTFILE=Vagrantfile.zajecia.2 vagrant up
+
+Vagrant.configure("2") do |config|
+  config.vm.network "private_network", ip: "10.0.5.2", virtualbox__intnet: "siknet1", auto_config: false
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 512
+  end
+
+  config.vm.box = "debian/buster64"
+  config.vm.provision "shell", inline: <<-SCRIPT
+sudo apt-get update
+sudo apt-get -y install mtr-tiny
+SCRIPT
+end

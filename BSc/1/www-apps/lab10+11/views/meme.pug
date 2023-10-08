@@ -1,0 +1,37 @@
+html
+    head
+        title=title
+        script(src="/js/csrf.js")
+    style
+        include style.css
+    body
+        include user.pug
+        a(href="/") #{"Go back to list"}
+        h1=meme.desc.name
+        div(class="meme")
+            a(href="meme/" + meme.id class="meme-link") #{meme.name}
+            span(class="meme-price") #{meme.price}
+            img(src=meme.url, class="meme-image")
+        h1="Price history"
+        table(id="price-history-table")
+            thead
+                tr
+                    th(class="col")="Price"
+                    th(class="col")="Data"
+            tbody
+                each price in priceHistory
+                    tr
+                        th(class="col")=price.price
+                        th(class="col")=price.date
+        h2="Change price"
+        form(method="post")
+            unless user
+                p #{"You have to be logged in to change the price"}
+                <fieldset disabled="disabled">
+            input(type="hidden", name="_csrf", value=csrfToken)
+            label(for="price") #{"Nowa cena"}
+            input(type="number", name="price", id="price", value=meme.price)
+            br
+            input(type="submit", value="Change")
+            unless user
+                </fieldset>

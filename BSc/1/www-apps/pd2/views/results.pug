@@ -1,0 +1,39 @@
+html
+    head
+        include csrf.pug
+        title #{"Quizy lepsze niż z MD"}
+    style
+        include css/main.css
+        include node_modules/bootstrap/dist/css/bootstrap.css
+    body
+        include user.pug
+
+        <main class="container">
+            <section id="result">
+            a(href="/", class="btn btn-primary") #{"Powrót to strony głównej"}
+            <h2>Wyniki</h2>
+            <div id="results">
+                p #{"Czas:"} <span id="init-result"></span>s
+                <div id="correctness">
+
+                </div>
+                p #{"Wynik końcowy:"} <span id="final-result"></span>s
+            </div>
+            <div class="controls row">
+                <div class="col-6 d-flex justify-content-center">
+                <button id="save-with-stats" class="btn btn-warning">Zapisz i zakończ wynik</button>
+                </div>
+            </div>
+            </section>
+            hr
+            section(id="correct-answers")
+                h1 #{"Poprawne odpowiedzi"}
+            hr
+            section(id="average-times")
+                h1 #{"Średni czas odpowiedzi"}
+            hr
+            section(id="top-scores")
+                h1 #{"Najlepsze wyniki"}
+        </main>
+
+        <script src="/dist/results.js"></script>

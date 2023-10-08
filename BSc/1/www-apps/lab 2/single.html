@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>
+                Lot <a href="https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a> -
+                <a href="https://pl.wikipedia.org/wiki/Oslo">Oslo</a>
+            </h1>
+        </header>
+        <p id="flight-time">Czas lotu: <b>2:00</b></p>
+        <div class="single" id="cities">
+            <article id="warsaw" class="city">
+                <h3><a href="https://pl.wikipedia.org/wiki/Warszawa">Warszawa</a></h3>
+                <img src="images/warsaw.jpeg" alt="Warszawa" class="city-image">
+                <div class="weather">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/52d2321d01/warsaw/" data-label_1="WARSAW"
+                        data-label_2="WEATHER" data-theme="original">WARSAW WEATHER</a>
+                </div>
+            </article>
+            <article id="oslo" class="city">
+                <h3><a href="https://pl.wikipedia.org/wiki/Oslo">Oslo</a></h3>
+                <img src="images/oslo.jpg" alt="Oslo" class="city-image">
+                <div class="weather">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/59d9110d75/oslo/" data-label_1="OSLO"
+                        data-label_2="WEATHER" data-theme="original">OSLO WEATHER</a>
+
+                </div>
+
+            </article>
+        </div>
+        <div class="single" id="plane">
+            <img src="images/A321.jpg" alt="A321" id="plane-image">
+            <div class="plane-desc">
+                <p id="plane-name">Samolot: <b>Airbus A-321</b></p>
+                <p id="plane-capacity">Pojemność: <b>220</b></p>
+                <p id="plane-type">
+                    Typ samolotu: <b>szerokokadłubowy</b>
+                </p>
+            </div>
+        </div>
+        <div class="single" id="passengers">
+            <b id="passengers-span">Lista pasażerów</b>
+            <div id="passenger-list-wrapper">
+                <ul id="passenger-list">
+                    <li class="passenger">Lorem, ipsum.</li>
+                    <li class="passenger">Iure, expedita!</li>
+                    <li class="passenger">Error, iure!</li>
+                    <li class="passenger">Dignissimos, alias!</li>
+                    <li class="passenger">Ut, quidem.</li>
+                    <li class="passenger">Iste, sint.</li>
+                    <li class="passenger">Voluptas, harum!</li>
+                    <li class="passenger">Voluptates, libero.</li>
+                    <li class="passenger">Ducimus, assumenda.</li>
+                    <li class="passenger">Numquam, debitis?</li>
+                    <li class="passenger">Labore, voluptatem.</li>
+                    <li class="passenger">Harum, est.</li>
+                    <li class="passenger">Blanditiis, suscipit.</li>
+                    <li class="passenger">Deleniti, atque!</li>
+                    <li class="passenger">Officiis, dolorum!</li>
+                    <li class="passenger">Suscipit, commodi.</li>
+                    <li class="passenger">Aspernatur, aut.</li>
+                    <li class="passenger">Voluptates, distinctio.</li>
+                    <li class="passenger">Impedit, repellendus.</li>
+                    <li class="passenger">Quia, iure.</li>
+                    <li class="passenger">Quo, illo!</li>
+                    <li class="passenger">Culpa, dolorum.</li>
+                    <li class="passenger">....</li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" id="return-main">Powrót na stronę główną</a>
+        <footer>
+            <span id="credentials">Zrobione przez Huberta Badocha</span>
+        </footer>
+    </main>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://weatherwidget.io/js/widget.min.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "weatherwidget-io-js");
+    </script>
+</body>
+
+</html>

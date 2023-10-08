@@ -1,0 +1,1 @@
+obj-m := adler32.o

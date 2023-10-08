@@ -1,0 +1,81 @@
+; <<>> DiG 9.11.5-P4-5.1+deb10u3-Debian <<>> http://www.domtanca.art.pl/
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 14853
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;http://www.domtanca.art.pl/.	IN	A
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2021031700 1800 900 604800 86400
+
+;; Query time: 37 msec
+;; SERVER: 10.0.2.3#53(10.0.2.3)
+;; WHEN: Wed Mar 17 14:20:13 UTC 2021
+;; MSG SIZE  rcvd: 131
+
+; <<>> DiG 9.11.5-P4-5.1+deb10u3-Debian <<>> http://www.domtanca.art.pl/ +trace
+;; global options: +cmd
+.			510076	IN	NS	g.root-servers.net.
+.			510076	IN	NS	h.root-servers.net.
+.			510076	IN	NS	i.root-servers.net.
+.			510076	IN	NS	j.root-servers.net.
+.			510076	IN	NS	k.root-servers.net.
+.			510076	IN	NS	l.root-servers.net.
+.			510076	IN	NS	m.root-servers.net.
+.			510076	IN	NS	a.root-servers.net.
+.			510076	IN	NS	b.root-servers.net.
+.			510076	IN	NS	c.root-servers.net.
+.			510076	IN	NS	d.root-servers.net.
+.			510076	IN	NS	e.root-servers.net.
+.			510076	IN	NS	f.root-servers.net.
+.			510076	IN	RRSIG	NS 8 0 518400 20210330050000 20210317040000 42351 . blagDBS/11mNGAsHRLNz4zZ5dn4wZxW7IQUosGe0qgiTwGBMtPaclPjm aSje8WQsu6oe4b8nnnDRQgeyGMbhF4VeJqXgxxlzWiOIboxCpOigIMHh tovxDu3lzT2t216pWsGqHEF0B7lkeV6YVlrA6ekpzzG9mgvJ3x3EOyia Ew8QrPw+uEX5zs9RSLPFoyCe9VKHcthM2tb7ItGBsKeDQXyB+iNDt9fY +RsxBDTvVVWsFk+cl16cjXGUD/wAhtlatDWRs5Ed0hadhrcjuE/g2Loz z2VHe/bZVEdBx9CDC5TB7dQ3IbZH8h+Ox1AAdnsl1dJ8UpXoLGGAh/H+ UMVJWw==
+;; Received 1097 bytes from 10.0.2.3#53(10.0.2.3) in 13 ms
+
+pl.			86400	IN	NSEC	place. NS DS RRSIG NSEC
+pl.			86400	IN	RRSIG	NSEC 8 1 86400 20210330050000 20210317040000 42351 . pTm7dWUwlCLYVeragX6y1/enuzJLbv33Pd3nXQMjA7IO+x6agfKNRRbo J//bIIEl74lvuFtU06HnSBtgJAkRI1CiJZkCUR/iKWwWKbtwApHL7EL7 2SU37POwzCONH7ZbYphExCOatc39Kbnl7Cxe5JOJRtezaCbFZ+28Y0Kv vvLhxr4ikxiuSSFMvAJ/P5q/l8Vz57BD6dKxsoX4TWxtOg1eafL50Lwr Uza0rPMxlsNCQ2SbN86nF+AJzM0b3CEnukOVZandHf+vbNwt0EaG0aRu Wwr6q8vwzPV0yaKrDuuwrT4h2nyWNB350RzvX9+uVWh7v4fVBTh0grRE RupB0Q==
+.			86400	IN	NSEC	aaa. NS SOA RRSIG NSEC DNSKEY
+.			86400	IN	RRSIG	NSEC 8 0 86400 20210330050000 20210317040000 42351 . FQYmJnKGsIvbGx2KsCUNpQ76XJrRrFh/lJ4fsqm2Z2Yl4uQ9OjNPMdYq KYlqXPjlcEExDEGjmHEp/a1fePlWQJzqE/dK6c6A4TqR05KXy79CDrUq bfYHH4uSBFluR13wT6dLMW4T5qAw9b0l25zUMHaq8X4HfQpRUSoREJfl P4f1X0abGrgUXIs9CigjzvIjEY6K/0aFU32jmHDQy4BPLbq2qRcJ9pF8 +kyy/EIpI/SqENsQ5p7n9sNrmfXR3eQ+AA/AS74kuY+Q3Z45PY27WWHL sPBySQX+xSzshPJczac7ilyScsOxShgaGzstqVrLdbATXrJFuqBSIjU5 wTdASA==
+.			86400	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2021031700 1800 900 604800 86400
+.			86400	IN	RRSIG	SOA 8 0 86400 20210330050000 20210317040000 42351 . X+TC/UTaHapzP0Wwg+5PeVlaW2jgZXUc15BZoGnfFZVeq99rv/Od8+BG BPl/DTcEDU3ET5FBJTOPeE9xQ7RnKzIRFXuwc8aMZtjSkqo26AUevUeG IVFOlg1UotLaFMJvusTl7P8Z40mAQqaEU8I4+tVapHGSUL1En5iBQoP8 TBe3Iz/qzw7BAxmeZ/5FnMAVJfytSdB/zTFFT8BZtrP6N0/VIkvXJg3U Enlk6fXjE1zzonIyFYyhlyp2PDvZtKKZ715yQAKKu2OprktmFZtkpFFt OmBMm7W+79rvWsdxJIaIPM8Db7C1GZkRHx0JkgDPj+dNgSKWdhjgGxex PNJOng==
+;; Received 1044 bytes from 198.97.190.53#53(h.root-servers.net) in 39 ms
+
+
+
+1. 10.0.2.3
+2. udp
+3. 53, tak powieważ jest do domyślny adres portu UDP, a inny nie jest sprezycowany w /etc/resolv.conf
+4. Nagłówek, Zapytanie, Zwierzchność, Dodatkowa
+W nagłówku są:
+- Id
+- Flagi
+- Zwierzchność
+- Dodatkowe miejsce 
+
+5. Z QUESTION SECTION
+6. 1
+7. 13, od g do m nastepnie od a do f
+
+
+bilbo.nask.org.pl.
+sun2.pwr.wroc.pl.
+wask.wask.wroc.pl.
+kirdan.nask.net.pl.
+ns1.net.icm.edu.pl.
+ldhpux.immt.pwr.wroc.pl.
+
+8. bilbo.nask.org.pl, sun2.pwr.wroc.pl
+
+ns1.neoip.com.
+ns2.neoip.com.
+
+9. ns1.neoip.com
+ns2.neoip.com
+
+194.29.128.1
+
+10. 194.29.128.1
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Linia lotnicza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+</head>
+
+<body>
+
+    <main id="main-page">
+        <header>
+            <h1 id="flight-list-header">Lista lotów</h1>
+        </header>
+        <menu>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="single.html">Pojedyńczy lot</a></li>
+            <li><a href="#main-content">Nasza firma</a></li>
+            <li><a href="#delayed">Odwołane loty</a></li>
+            <li><a href="#flight-table">Lista lotów</a></li>
+            <li><a href="fleet.html">Nasza flota</a></li>
+            <li><a href="https://wikipedia.com">Wiki</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="reservation_accomplished.html.html">Rezerwacja ukończona pomyślnie</a></li>
+        </menu>
+        <section class="single" id="main-content">
+            <h2>Nasza firma</h2>
+            <figure>
+                <img src="images/plane.webp" alt="logo" id="logo">
+            </figure>
+            <div id="desc">
+                <p id="pierwszy">
+                    Tabelka przedstawia loty wykowynawe przez naszą linię.
+                </p>
+                <p id="drugi">
+                    Najlepsza jakość w najlepszej cenie!!
+                </p>
+            </div>
+            <h2>Lista lotów</h2>
+            <p id="wow">WOW super lot!</p>
+            <table id="flight-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Skąd</th>
+                        <th>Dokąd</th>
+                        <th>Data</th>
+                        <th>Godzina</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="single.html">1</a></td>
+                        <td>Warszawa</td>
+                        <td>Oslo</td>
+                        <td>21.03</td>
+                        <td>13:37</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Warszawa</td>
+                        <td>Łódź</td>
+                        <td>29.02</td>
+                        <td>21:37</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="delayed" class="single">
+            <h2>Opóźnione loty</h2>
+            <table id="delayed-flight-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Skąd</th>
+                        <th>Dokąd</th>
+                        <th>Data</th>
+                        <th>Godzina</th>
+                        <th>Opóźnienie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="delayed">
+                        <td>1</td>
+                        <td>Warszawa</td>
+                        <td>Oslo</td>
+                        <td>21.03</td>
+                        <td>13:37</td>
+                        <td>30 minut</td>
+                    </tr>
+                    <tr class="canceled">
+                        <td>2</td>
+                        <td>Warszawa</td>
+                        <td>Łódź</td>
+                        <td>29.02</td>
+                        <td>21:37</td>
+                        <td>Odwołany</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form action="reservation_accomplished.html" id="booking">
+                <div>
+                    <label for="booking-from">Skąd</label><br>
+                    <select name="from" id="booking-from">
+                        <option value="Warsaw">Warszawa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="booking-to">Skąd</label><br>
+                    <select name="to" id="booking-to">
+                        <option value="Boat">Łódź</option>
+                        <option value="Oslo">Oslo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="booking-date">Data</label><br>
+                    <input type="date" name="date" id="booking-date">
+                </div>
+                <div>
+                    <label for="booking-fullname">Imię i nazwisko</label><br>
+                    <input type="text" name="fullname" id="booking-fullname">
+                </div>
+                <input type="submit" value="Zarezerwuj">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+
+
+        <footer>
+            <span id="credentials">Zrobione przez Huberta Badocha</span>
+        </footer>
+    </main>
+    <div id="validation-error">
+        <p></p>
+        <button>Zamknij</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

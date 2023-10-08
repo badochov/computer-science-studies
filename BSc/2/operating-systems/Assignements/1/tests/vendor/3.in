@@ -1,0 +1,1 @@
+echo "ŁOŚ" | ./diakrytynizator 1075041 623420 1; echo $?

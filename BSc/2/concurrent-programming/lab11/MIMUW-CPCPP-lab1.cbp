@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MIMUW-CPCPP-lab1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-raii">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-raii" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-raii"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-raii/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-raii" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-raii/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-join">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-join" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-join"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-join/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-join" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-join/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promise-exception">
+				<Option output="/home/badochov/Desktop/PW/lab11/promise-exception" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 promise-exception"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promise-exception/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/promise-exception" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 promise-exception/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-detached">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-detached" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-detached"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-detached/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread-detached" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread-detached/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/thread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 thread/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="args">
+				<Option output="/home/badochov/Desktop/PW/lab11/args" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 args"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="args/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/args" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 args/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="grep-seq">
+				<Option output="/home/badochov/Desktop/PW/lab11/grep-seq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 grep-seq"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="grep-seq/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/grep-seq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 grep-seq/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="res">
+				<Option output="/home/badochov/Desktop/PW/lab11/res" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 res"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="res/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/res" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 res/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promise">
+				<Option output="/home/badochov/Desktop/PW/lab11/promise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 promise"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promise/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/promise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 promise/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="grep-par">
+				<Option output="/home/badochov/Desktop/PW/lab11/grep-par" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 grep-par"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="grep-par/fast">
+				<Option output="/home/badochov/Desktop/PW/lab11/grep-par" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/badochov/Desktop/PW/lab11"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 grep-par/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/badochov/Desktop/PW/lab11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/args.cpp">
+			<Option target="args"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/grep-par.cpp">
+			<Option target="grep-par"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/grep-seq.cpp">
+			<Option target="grep-seq"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/promise-exception.cpp">
+			<Option target="promise-exception"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/promise.cpp">
+			<Option target="promise"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/res.cpp">
+			<Option target="res"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/thread-detached.cpp">
+			<Option target="thread-detached"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/thread-join.cpp">
+			<Option target="thread-join"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/thread-raii.cpp">
+			<Option target="thread-raii"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/thread.cpp">
+			<Option target="thread"/>
+		</Unit>
+		<Unit filename="/home/badochov/Desktop/PW/lab11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,10 @@
+Porównywany język: C
+Środowisko: Linux 5.5.3-050503-generic x86_64
+Wersja Javy: javac 11.0.6
+Werscja GCC: gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+Czas działania:
+    Java: 0.226s
+    Java bez kompilacji: 1,632s
+    C: 0,074s
+Algorytm: QuickSort
+Rozmiar Tablicy: 200 000

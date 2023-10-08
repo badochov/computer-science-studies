@@ -1,0 +1,19 @@
+if user
+    p #{"Hello " + user.username + "!"}
+    form(method="post", action="/logout")
+        input(type="hidden", name="_csrf", value=csrfToken)
+        input(type="submit", value="Log out")
+else
+    form(method="post", action="/login")
+        input(type="hidden", name="_csrf", value=csrfToken)
+        label(for="username") #{"Username: "}
+        input(name="username", id="username")
+        br
+        label(for="password") #{"Password: "}
+        input(name="password", id="password")
+        br
+        label(for="sign-up") #{"Sign up?"}
+        input(type="checkbox" ,name="sign-up", id="sign-up")
+        br
+        input(type="submit", value="Log in")
+p #{"Visit number:" + visit}

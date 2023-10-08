@@ -1,0 +1,29 @@
+html
+    head
+        title=title
+    style
+        include style.css
+    body
+        a(href="/") #{"Go back to list"}
+        h1=meme.desc.name
+        div(class="meme")
+            a(href="meme/" + meme.id class="meme-link") #{meme.name}
+            span(class="meme-price") #{meme.price}
+            img(src=meme.url, class="meme-image")
+        h1="Price history"
+        table(id="price-history-table")
+            thead
+                tr
+                    th(class="col")="Price"
+                    th(class="col")="Data"
+            tbody
+                each price in meme.price_history
+                    tr
+                        th(class="col")=price.price
+                        th(class="col")=price.date
+        h2="Change price"
+        form(method="post")
+            label(for="price")
+            input(type="number", name="price", id="price", value=meme.price)
+            br
+            input(type="submit", value="Change")

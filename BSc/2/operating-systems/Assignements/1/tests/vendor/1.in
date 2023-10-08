@@ -1,0 +1,1 @@
+echo "Zażółć gęślą jaźń…" | ./diakrytynizator 0 1; echo $?

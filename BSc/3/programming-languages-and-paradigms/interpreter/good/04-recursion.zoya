@@ -1,0 +1,3 @@
+sum : Int -> Int -> Int= |acc:Int||n:Int| if n == 0 then acc else sum (acc + n) (n - 1);
+
+main :Int= sum 0 10;

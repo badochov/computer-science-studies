@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    a(href="/users/") #{"My account"}
+    ul
+        each post in posts
+            li #{post.tresc}
+                form(method="post" action=`/users/my_entries/delete/${post.timestamp}`)
+                    input(type="hidden", name="_csrf" value=csrfToken)
+                    input(type="submit" value="Delete")
+  
+    include paginator
+    if teacher
+        <form method="post" action="new">
+            textarea(name="content")
+            input(type="hidden", name="_csrf" value=csrfToken)
+
+            <input type="submit" value="Add">
+        </form>

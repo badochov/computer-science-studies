@@ -1,0 +1,2 @@
+main : List Int = match [42]
+    \ a:(b) -> a:b;

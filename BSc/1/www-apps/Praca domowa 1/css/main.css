@@ -1,0 +1,98 @@
+#excercise {
+	display: none;
+}
+
+#result {
+	display: none;
+}
+
+.correct {
+	color: lime;
+}
+
+.incorrect {
+	color: red;
+}
+
+#penalty-time {
+	font-weight: bold;
+}
+
+#prompt {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#final-result {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#init-result {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#quiz-desc {
+	display: none;
+}
+
+.even {
+	background-color: lightgray;
+}
+
+.table-header {
+	font-size: 1.5em;
+	background-color: lightblue;
+	padding: 15px;
+}
+
+.row {
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.main-header {
+	text-align: center;
+}
+
+#quiz-choise,
+#quiz-desc {
+	margin: 25px 0 50px 0;
+}
+
+#desc-wrapper {
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+#desc {
+	padding: 15px;
+}
+
+#quizes > .row:not(.table-header) {
+	background-color: lightgoldenrodyellow;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.prev-result {
+	padding: 5px;
+}
+
+.quick-access-node.answered {
+	background-color: lightgray;
+}
+
+.quick-access-node {
+	border: 1px black solid;
+	padding: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#quick-access {
+	margin-bottom: 10px;
+}

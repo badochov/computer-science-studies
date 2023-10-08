@@ -1,0 +1,6 @@
+rebuild : (List 'a) -> (List 'a) = |l:List 'a| 
+    if !(empty l)
+    then head l : rebuild (tail l)
+    else [];
+
+main : List Int = rebuild [4, 2, 0];

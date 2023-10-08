@@ -1,0 +1,1 @@
+echo -e "abc\n\x80" | ./diakrytynizator 7; echo $?

@@ -1,0 +1,9 @@
+[submodule "Assignments/1/ELFIO"]
+	path = Assignments/1/ELFIO
+	url = git@github.com:serge1/ELFIO.git
+[submodule "qemu/hshare/linux-6.2.1"]
+	path = qemu/hshare/linux-6.2.1
+	url = git@github.com:badochov/linux-6.2.1.git
+[submodule "Assignments/3/vm/qemu"]
+	path = Assignments/3/vm/qemu
+	url = git@github.com:AndrzejJackowskiMIMUW/qemu.git

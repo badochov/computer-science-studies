@@ -1,0 +1,114 @@
+entrypoints Program ;
+
+-- programs ------------------------------------------------
+token VarName (lower (letter | digit | '_')*) ;
+token TypeName (upper (letter | digit | '_')*) ;
+
+Program.                        Program ::= [TopDef] ;
+
+TopDefVar.                      TopDef ::= VarDef ";" ;
+TopDefType.                     TopDef ::= "type" TypeName [PolyIdentToken] "=" [VariantType] ";" ;
+
+VariantType.                    VariantType ::= TypeName [Type] ;
+
+VarDef.	                        VarDef ::= VarName ":" Type "=" Expr ;
+
+separator                       nonempty TopDef "\n" ;
+separator                       PolyIdentToken "" ;
+separator                       nonempty VariantType "|" ;
+
+-- Types ---------------------------------------------------
+
+token PolyIdentToken ('\'' lower) ;
+
+TypeInt.            Type1 ::= "Int" ;
+TypeBool.           Type1 ::= "Bool" ;
+TypePoly.           Type1 ::= PolyIdentToken ;
+TypeCustom.         Type1 ::= TypeName [Type] ;
+TypeBrackets.       Type1 ::= "(" Type ")" ;
+TypeFn.             Type ::= Type "->" Type ;
+
+coercions           Type 1 ;
+separator           Type " " ;
+
+-- Expressions ---------------------------------------------
+
+ETypeHelper.    Expr9 ::= "<<<" TypeName [VarName] ">>>" ; -- used only internally for type application
+
+EVar.           Expr8 ::= VarName ;
+EType.          Expr8 ::= TypeName ;
+ELitInt.        Expr8 ::= Integer ;
+ELitList.       Expr8 ::= "[" [ListArg] "]" ;
+ELitListEmpty.  Expr8 ::= ListEmpty ;
+EBrackets.      Expr8 ::= "(" Expr ")" ;
+
+EFApp.          Expr7 ::= Expr Expr8 ;
+
+ELambda.        Expr6 ::= "|" VarName ":" Type "|" Expr ;
+EMatch.         Expr6 ::= Match ;
+ELetIn.         Expr6 ::= "let" VarDef "in" Expr ;
+ECond.          Expr6 ::= "if" Expr "then" Expr "else" Expr ;
+
+ENeg.           Expr5 ::= "-" Expr6 ;
+ENot.           Expr5 ::= "!" Expr6 ;
+EListEx.        Expr5 ::= Expr6 ":" Expr6 ;
+
+EMul.           Expr4 ::= Expr4 MulOp Expr5 ;
+
+EAdd.           Expr3 ::= Expr3 AddOp Expr4 ;
+
+ERel.           Expr2 ::= Expr2 RelOp Expr3 ;
+
+EAnd.           Expr1 ::= Expr2 "&" Expr1 ;
+
+EOr.            Expr ::= Expr1 "^" Expr ;
+
+coercions       Expr 9 ;
+
+ListArg.        ListArg ::= Expr ;
+ListEmpty.      ListEmpty ::= "[]" ;
+separator       nonempty ListArg "," ;
+separator       VarName " " ;
+
+-- Pattern Matching ---------------------------------------
+
+Match.                                      Match ::= "match" Expr [MatchArm] ;
+
+MatchArm.                                   MatchArm ::= "\\" MatchArmSpecifier "->" Expr ;
+
+MatchArmListEmpty.                          MatchArmSpecifierList ::= ListEmpty ;
+MatchArmListHeadTail.                       MatchArmSpecifierList ::= MatchArmSpecifier ":" MatchArmSpecifier ;
+
+MatchArmType.                               MatchArmSpecifier ::= TypeName [MatchArmVariantTypeArgument] ;
+MatchArmVar.                                MatchArmSpecifier ::= VarName ;
+MatchArmFallback.                           MatchArmSpecifier ::= "_" ;
+MatchArmList.                               MatchArmSpecifier ::= MatchArmSpecifierList ;
+MatchArmBrackets.                           MatchArmSpecifier ::= "(" MatchArmSpecifier ")" ;
+
+MatchArmVariantTypeArgumentIdent.           MatchArmVariantTypeArgument ::= VarName ;
+MatchArmVariantTypeArgumentFallback.        MatchArmVariantTypeArgument ::= "_" ;
+MatchArmVariantTypeArgumentNested.          MatchArmVariantTypeArgument ::= "(" MatchArmSpecifier ")" ;
+
+
+separator                                   nonempty MatchArm "\n" ;
+separator                                   MatchArmVariantTypeArgument " " ;
+
+-- operators -----------------------------------------------
+
+Plus.      AddOp ::= "+" ;
+Minus.     AddOp ::= "-" ;
+Times.     MulOp ::= "*" ;
+Div.       MulOp ::= "/" ;
+Mod.       MulOp ::= "%" ;
+LTH.       RelOp ::= "<" ;
+LE.        RelOp ::= "<=" ;
+GTH.       RelOp ::= ">" ;
+GE.        RelOp ::= ">=" ;
+EQU.       RelOp ::= "==" ;
+NE.        RelOp ::= "!=" ;
+
+-- comments ------------------------------------------------
+
+comment    "//" ;
+
+comment    "/*" "*/" ;

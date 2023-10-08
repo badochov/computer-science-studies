@@ -1,0 +1,3 @@
+[submodule "MSc/1/advanced-operating-systems/Assignments/1/ELFIO"]
+	path = MSc/1/advanced-operating-systems/Assignments/1/ELFIO
+	url = git@github.com:badochov/ELFIO.git

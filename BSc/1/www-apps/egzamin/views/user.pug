@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    form(action="/users/wyloguj", method="post")
+        input(type="hidden", name="_csrf" value=csrfToken)
+        input(type="submit" value="Wyloguj")
+    if teacher
+        a(href="/users/my_entries") #{"My entries"}
+    h1 #{"Followed users entries"}
+    if posts.length
+        ul
+            each post in posts
+                p #{post.tresc + ` ~~ ${post.login_osoby}`}
+    else
+        p #{"No followed posts"}
+    include paginator

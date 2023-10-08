@@ -1,0 +1,2 @@
+// funkcja len zaimplementowana jest w prelude.
+main : Int = len [] + len [4,2,0];

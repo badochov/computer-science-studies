@@ -1,0 +1,5 @@
+if page > 0
+    a(href=`/users?page=${page - 1}`) #{"prev page"}
+lastpage
+if !last_page
+    a(href=`/users?page=${page + 1}`) #{"next page"}

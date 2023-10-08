@@ -1,0 +1,295 @@
+body {
+  text-align: center;
+  background-color: #eee;
+  font-family: sans-serif;
+  max-width: 100%;
+
+}
+main#main-page{
+  display: grid;
+  grid-template-columns: 200px 3fr 1fr ;
+  grid-template-areas: 
+  "header header header"
+  "menu main delayed"
+  "f f f";
+  column-gap: 15px;
+  justify-content: center;
+}
+
+header{
+  grid-area:header
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-weight: 50;
+}
+
+#pierwszy,
+#drugi {
+  width: 75%;
+  margin: 0 12.5%;
+}
+
+#wow {
+  color: red;
+  font-weight: 500;
+  width: 200px;
+  position: relative;
+  /* background-color: pink; */
+  left: 115px;
+  top: 21px;
+  margin-bottom: -20px;
+  opacity: 0.8;
+}
+
+#logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+#flight-time {
+  font-size: 30px;
+}
+
+.city {
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0d9b2;
+}
+
+#cities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+
+#plane {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#desc-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.city-image {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.weather {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#return-main {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+section.single {
+  background-color: burlywood;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: aliceblue;
+  color: #aaa;
+  font-size: 30px;
+  grid-area: f;
+}
+
+#passenger-list {
+  text-align: left;
+  display: inline-block;
+  margin-left: -1em;
+}
+
+#flight-table {
+  width: 100%;
+  border: 1px black solid;
+}
+
+#delayed-flight-table {
+  width: 100%;
+  border: 1px black solid;
+}
+
+menu{
+  list-style: none
+}
+
+#delayed{
+  font-weight: bold;
+  font-style: italic;
+}
+
+#delayed{
+  grid-area: delayed
+}
+
+.delayed{
+  background-color: yellow;
+}
+
+.canceled{
+  background-color: lightcoral;
+}
+menu{
+  text-transform: uppercase;
+}
+
+menu>li{
+  margin: 5px;
+}
+
+menu a:link,a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+menu a:hover{
+  font-weight: bold;
+}
+
+
+main#main-page > section,menu{
+  margin: 5px;
+  flex:1
+}
+
+form#booking{
+  margin:10px;
+  text-align: left;
+}
+
+section#main-content{
+  grid-area:main
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  main#main-page{
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-areas: 
+    "header header"
+    "menu menu"
+    "main delayed"
+    "f f";
+    column-gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For phones: */
+  main#main-page{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "delayed"
+    "f";
+    column-gap: 15px;
+    justify-content: center;
+  }
+  .city-image, .weather{
+    display: none;
+  }
+}
+
+.passenger:nth-child(even){
+  background-color: lightslategray;
+}
+.seat{
+  visibility: hidden;
+}
+
+.passenger:hover .seat{
+  visibility: visible;
+  width: 20px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  
+}
+
+menu{
+  grid-area: menu;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#reservation-successful{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: gray;
+  opacity: 0.90;
+}
+
+#reservation-successful > h1{
+  color:lime;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+#validation-error{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: gray;
+  opacity: 0.90;
+}
+
+#validation-error > p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  color: red;
+}
