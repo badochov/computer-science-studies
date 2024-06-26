@@ -1,30 +1,33 @@
 [submodule "MSc/1/advanced-operating-systems/Assignments/1/ELFIO"]
 	path = MSc/1/advanced-operating-systems/Assignments/1/ELFIO
-	url = git@github.com:badochov/ELFIO.git
+	url = git@github.com:badochov-studies/ELFIO.git
 [submodule "MSc/1/engineering-of-distributed-computational-infrastructure/distributed-shortest-path"]
 	path = MSc/1/engineering-of-distributed-computational-infrastructure/distributed-shortest-path
-	url = git@github.com:badochov/distributed-shortest-path.git
+	url = git@github.com:badochov-studies/distributed-shortest-path.git
 [submodule "BSc/3/probabilistic-logic-programming/plp-project"]
 	path = BSc/3/probabilistic-logic-programming/plp-project
-	url = git@github.com:badochov/plp-project.git
+	url = git@github.com:badochov-studies/plp-project.git
 [submodule "MSc/1/ideas-and-informatics/findify"]
 	path = MSc/1/ideas-and-informatics/findify
-	url = git@github.com:badochov/findify.git
+	url = git@github.com:badochov-studies/findify.git
 [submodule "BSc/2/programming-languages-and-tools/JNP1_3"]
 	path = BSc/2/programming-languages-and-tools/JNP1_3
-	url = git@github.com:badochov/JNP1_3
+	url = git@github.com:badochov-studies/JNP1_3
 [submodule "BSc/2/programming-languages-and-tools/JNP1_1"]
 	path = BSc/2/programming-languages-and-tools/JNP1_1
-	url = git@github.com:badochov/JNP1_1
+	url = git@github.com:badochov-studies/JNP1_1
 [submodule "BSc/2/programming-languages-and-tools/JNP1_2"]
 	path = BSc/2/programming-languages-and-tools/JNP1_2
-	url = git@github.com:badochov/JNP1_2
+	url = git@github.com:badochov-studies/JNP1_2
 [submodule "BSc/2/programming-languages-and-tools/JNP1_4"]
 	path = BSc/2/programming-languages-and-tools/JNP1_4
-	url = git@github.com:badochov/JNP1_4
+	url = git@github.com:badochov-studies/JNP1_4
 [submodule "BSc/2/programming-languages-and-tools/JNP1_5"]
 	path = BSc/2/programming-languages-and-tools/JNP1_5
-	url = git@github.com:badochov/JNP1_5
+	url = git@github.com:badochov-studies/JNP1_5
 [submodule "BSc/2/programming-languages-and-tools/JNP1_6"]
 	path = BSc/2/programming-languages-and-tools/JNP1_6
-	url = git@github.com:badochov/JNP1_6
+	url = git@github.com:badochov-studies/JNP1_6
+[submodule "EPFL"]
+	path = EPFL
+	url = git@github.com:badochov-studies/EPFL.git
